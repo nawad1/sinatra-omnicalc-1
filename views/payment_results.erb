@@ -7,7 +7,7 @@
     APR
   </dt>
   <dd>
-   <%=params.fetch("user_apr").to_f%> %
+   <%=params.fetch("user_apr").to_f.to_fs(:percentage, { :precision => 4 })%> 
   </dd>
 
   <dt>
@@ -21,7 +21,7 @@
     Principal
   </dt>
   <dd>
-    $ <%=@present_value%>
+     <%=@present_value.to_fs(:currency)%>
   </dd>
 
   <dt>
