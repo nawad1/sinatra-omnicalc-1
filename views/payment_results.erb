@@ -7,28 +7,28 @@
     APR
   </dt>
   <dd>
-    5.4200%
+   <%=params.fetch("user_apr").to_f%> %
   </dd>
 
   <dt>
     Number of years
   </dt>
   <dd>
-    6
+    <%=params.fetch("user_years")%>
   </dd>
 
   <dt>
     Principal
   </dt>
   <dd>
-    $25,000.00
+    $ <%=@present_value%>
   </dd>
 
   <dt>
     Payment
   </dt>
   <dd>
-    $407.51
+    <%=@payment%>
   </dd>
 </dl>
 
