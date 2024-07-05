@@ -28,7 +28,7 @@
     Payment
   </dt>
   <dd>
-    <%=@payment%>
+    <%=@payment.round(2).to_fs(:currency)%>
   </dd>
 </dl>
 
